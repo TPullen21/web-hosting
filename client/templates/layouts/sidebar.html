@@ -10,4 +10,8 @@
 	{{/if}}
 
 	<a class="button button{{#if currentRoute 'plans'}}-primary{{/if}} u-full-width" href="/">View Plans</a>
+
+	{{#if currentUser}}
+        <a class="button button{{#if currentRoute 'myplans'}}-primary{{/if}} u-full-width" href="/myplans">My Plans</a>
+    {{/if}}
 </template>
